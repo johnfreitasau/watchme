@@ -3,12 +3,10 @@
 </h1>
 
 <h3 align="center">
-  Ignite - WatchMe 🍿
+  Application for listing films by genre developed as the second challenge of Ignite React JS Bootcamp. 🍿  
 </h3>
 
-> Code of the Challenge 2 of the Ignite course on the ReactJs trail of the Rocketseat platform.
 
-Application for listing films by genre developed as the second challenge of Ignite Trilha React JS. 
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/johnfreitasau/watchme?color=%23ffff00">
