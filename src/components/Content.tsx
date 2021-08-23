@@ -1,4 +1,6 @@
 import { MovieCard } from "../components/MovieCard";
+import { List, AutoSizer, ListRowRenderer } from "react-virtualized";
+import { memo } from "react";
 
 interface ContentProps {
   movies: Array<MovieProps>;
@@ -19,7 +21,7 @@ interface GenreProps {
   title: string;
 }
 
-export function Content({ movies, selectedGenre }: ContentProps) {
+function ContentComponent({ movies, selectedGenre }: ContentProps) {
   return (
     <div className="container">
       <header>
@@ -44,3 +46,5 @@ export function Content({ movies, selectedGenre }: ContentProps) {
     </div>
   );
 }
+
+export const Content = memo(ContentComponent);

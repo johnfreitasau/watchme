@@ -3,6 +3,7 @@ import { Button } from "./Button";
 
 interface SideBarProps {
   genres: Array<GenreResponseProps>;
+  selectedGenreId: number;
   handleGenderId: (id: number) => void;
 }
 
@@ -12,8 +13,12 @@ interface GenreResponseProps {
   title: string;
 }
 
-function SideBarComponent({ genres, handleGenderId }: SideBarProps) {
-  const [selectedGenreId, setSelectedGenreId] = useState(1);
+function SideBarComponent({
+  genres,
+  selectedGenreId,
+  handleGenderId,
+}: SideBarProps) {
+  console.log("selectedGenreId:", selectedGenreId);
 
   return (
     <nav className="sidebar">
@@ -37,6 +42,4 @@ function SideBarComponent({ genres, handleGenderId }: SideBarProps) {
   );
 }
 
-export const SideBar = memo(SideBarComponent, (prevProps, NextProps) => {
-  return Object.is(prevProps.genres, NextProps.genres);
-});
+export const SideBar = memo(SideBarComponent);
