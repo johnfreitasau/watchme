@@ -18,8 +18,6 @@ function SideBarComponent({
   selectedGenreId,
   handleGenderId,
 }: SideBarProps) {
-  console.log("selectedGenreId:", selectedGenreId);
-
   return (
     <nav className="sidebar">
       <span>
